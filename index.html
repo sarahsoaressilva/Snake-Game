@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Snake Game</title>
+</head>
+<body>
+    <h1 class="textos"> Snake Game </h1>
+    <p class="textos"> Clique no botão para iniciar o jogo. </p>
+
+    <div id="local-game">
+        <button class="game-start margin" id="game-start" onClick="btnJogo()"> Iniciar Jogo </button>
+        <canvas id="snake" width="512" height="512"></canvas>
+    </div>
+    <h3 class="margin textos" id="pontos"></h3>
+
+
+
+    <!-- Audios do Jogo --> 
+    <audio id="musica-principal" src="resources/snake3-music.mp3" loop></audio>
+    <audio id="efeito-comida" src="resources/coin.mp3"></audio>
+    <audio id="game-over" src="resources/gameover.mp3"></audio>
+
+</body>
+</html>
